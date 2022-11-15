@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  color: white;
+}
+
+a:hover {
+  font-size: x-large;
+  color: black;
+}
+body{
+  display: grid;
+  grid-gap: 5px;
+  height: 100vh;
+  grid-template-rows: 2fr 2fr 5fr 2fr;
+  background-color: whitesmoke;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: darkblue;
+  height: 1fr;
+}
+
+aside {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+  height : 1fr;
+  font-size: large;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  height: 1fr;
+  padding: 20px;
+  font-size: large;
+  font-family: Electrolize;
+}
+
+#gradPhotoMain {
+  width: 90%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#yt {
+height: 35px;
+width: 35px;
+}
+
+#inst {
+  height: 35px;
+  width: 35px;
+  }
+
+  #twitch {
+    height: 37px;
+    width: 37px;
+    }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: darkblue;
+  height: 1fr;
+}
+
+header,
+nav,
+aside,
+main,
+footer {
+  border-radius: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  body {
+    display: grid;
+    grid-template-areas: 
+      "header header header header"
+      "aside aside nav nav"
+      "aside aside main main"
+      "aside aside main main"
+      "aside aside main main"
+      "aside aside main main"
+      "footer footer footer footer";
+    grid-gap: 5px;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr 1fr;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: header;
+    padding: 30px;
+  }
+
+  aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: aside;
+    background-color: deepskyblue;
+  }
+
+  #gradPhotoAside {
+    height: 95%;
+    width: 90%;
+    border-radius: 20px;
+  }
+ 
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: nav;
+  }
+
+  nav:hover {
+    transform: scale(1,1.1);
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: main;
+  }
+
+  #gradPhotoMain {
+    display: none;
+  }
+
+
+  footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: footer;
+    padding: 30px;
+  }
+
+  header,
+  footer {
+    border-radius: 0px;
+  }
+
+  header {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  footer {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+
+}
