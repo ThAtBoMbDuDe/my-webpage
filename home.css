@@ -9,7 +9,15 @@ a:hover {
   font-size: x-large;
   color: black;
 }
-body{
+
+#mainHover:hover {
+  transform: scale(2,2);
+  color: red;
+  transition: 0.8s ease-in;
+}
+
+
+body {
   display: grid;
   grid-gap: 5px;
   height: 100vh;
@@ -23,9 +31,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   background-color: darkblue;
   height: 1fr;
+}
+
+h1 {
+  margin-left: 3px;
 }
 
 aside {
@@ -34,7 +45,7 @@ aside {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color: skyblue;
   height : 1fr;
@@ -133,13 +144,18 @@ footer {
  
   nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     grid-area: nav;
   }
 
   nav:hover {
     transform: scale(1,1.1);
+    font-size: x-large;
+  }
+
+  a:hover {
+    font-size: xx-large;
   }
 
   main {
@@ -151,6 +167,12 @@ footer {
 
   #gradPhotoMain {
     display: none;
+  }
+
+  #mainHover:hover {
+    transform: scale(10,10);
+    color: red;
+    transition: 0.8s ease-in;
   }
 
 
