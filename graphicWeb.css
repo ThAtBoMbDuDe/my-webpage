@@ -8,18 +8,12 @@
 
 
 
-
-img:hover {
-  box-shadow: 5px 5px 5px darkgrey;
-  transform: scale(1.01,1.01);
-}
-
-
 a {
   font-size: small;
 }
 a:hover {
-  transform: scale(1.2,1.2)
+  transform: scale(1.2,1.2);
+  transition: 0.4s ease-in-out;
 }
 
 body {
@@ -30,9 +24,10 @@ body {
    "main main main"
    "main main main";
   height: 100vh;
-  width: 98vw;
+  width: 100vw;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 header {
@@ -55,37 +50,13 @@ nav {
 
 img {
   width: 100%;
-  height: 95%;
-  margin-left: .5%;
-  border-radius: 20px;
+  height: 100%;
 }
 
 
 main {
   grid-area: main;
-  grid-gap: 15px;
   width: 100%;
-  
-  display: grid;
-  grid-template-areas:
-  "i1 i1 i1 i1 i1 i1"
-  "i1 i1 i1 i1 i1 i1"
-  "i1 i1 i1 i1 i1 i1"
-  "i2 i2 i2 i2 i2 i2"
-  "i2 i2 i2 i2 i2 i2"
-  "i2 i2 i2 i2 i2 i2"
-  "i3 i3 i3 i3 i3 i3"
-  "i3 i3 i3 i3 i3 i3"
-  "i3 i3 i3 i3 i3 i3";
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  padding: .5%;
-}
-
-
-#i1 {
-  grid-area: i1;
+  display: flex;
 }
 
