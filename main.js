@@ -8,8 +8,6 @@ const compute = document.querySelector(".compButton");
 const buttonArr = Array.from(document.getElementsByTagName('button'));
 const rng = document.querySelector("#RNG");
 
-
-
 buttonArr.map(button => {
   button.addEventListener('click', (v) => {
     switch(v.target.innerText){
@@ -30,8 +28,3 @@ buttonArr.map(button => {
     }
   })
 })
-
-
-
-
-
